@@ -1,13 +1,17 @@
+//global variables
 let pScore = 0;
 let cScore = 0;
+//start the game
 const game = () => {
+    // random computer choice
     const choices = ['rock','paper','scissors'];
     const cnumbers = Math.floor(Math.random() * 3);
     let computerChoice = choices[cnumbers];
 
-
+// ask for choice
 let playerchoice = prompt('What is your choice?');
 let pchoice = playerchoice.toLocaleLowerCase();
+// start round
 let round = () => {
     if (pchoice === computerChoice){
         console.log('It is a tie , you get the same');
@@ -64,11 +68,11 @@ let round = () => {
 }
     
 
-    
+   // call round 
 round();
  
 }
- 
+// call 5 rounds game coz i dunt know about loops yet 
 game();
 game();
 game();
