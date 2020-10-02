@@ -1,4 +1,5 @@
 //global variables
+// testing git push
 let pScore = 0;
 let cScore = 0;
 //start the game
